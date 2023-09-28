@@ -10,10 +10,10 @@ RUN mkdir /app
 WORKDIR /app
 
 # Copy the entire Django project folder into the image
-COPY receiptprocessor/ /app/
+COPY ./ /app/
 
 # Copy the Pipfile and Pipfile.lock into the image
-COPY receiptprocessor/Pipfile receiptprocessor/Pipfile.lock /app/
+COPY Pipfile Pipfile.lock /app/
 
 # Install pipenv (if needed) and Python dependencies
 RUN pip install pipenv && pipenv install --deploy --ignore-pipfile
