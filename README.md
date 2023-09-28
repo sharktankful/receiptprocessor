@@ -1,4 +1,4 @@
-# Receipt Processor Instructions
+# Receipt Processor Web Service Instructions
 
 To begin using the receipt processor (API Webservice) to take your JSON RECEIPT and return an ID and point total at the specific endpoints, just follow the directions in the instructions below.
 
