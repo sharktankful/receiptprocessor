@@ -17,11 +17,11 @@ INSTRUCTIONS:
 6. Run this command in the terminal to create the image: ```docker build -t your-image-name .```
    - ***Replace 'your-image-name' with the name of your choice***
    
-   - ***MAKE SURE NOT TO REMOVE THE  '.'  AT THE END!!!***
+   - ***MAKE SURE NOT TO REMOVE THE  ' . '  AT THE END!!!***
 
 8. Once the image is built, run this command to activate a Docker container from it: ```docker run -p 8000:8000 your-image-name``` .
 9. Your Docker container should be running and you'll have access to your API web service from http://localhost:8000
-     -To close your server hit ***'CRTL+C'***.
+     - To close your server hit ***'CRTL+C'***.
 10. To send a submit a JSON receipt (HTTP Response) in a separate command line (But in the same directory) you can either use the curl command listed below or another method of your choice.
     - ```curl -X POST -H "Content-Type: application/json" -d '{YOUR JSON RECEIPT GOES HERE}' http://localhost:8000/receipts/process/```
 11. The command line will send you back a unique JSON ID object
